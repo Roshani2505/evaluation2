@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Calculator</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #e6e9ff;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #138387;
+            margin-bottom: 20px;
+        }
+
+        .calculator {
+            width: 350px;
+            background: #dde2ff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.15);
+        }
+
+        .display {
+            width: 100%;
+            background: #f5f6ff;
+            height: 70px;
+            border-radius: 12px;
+            font-size: 45px;
+            font-weight: bold;
+            text-align: right;
+            padding: 12px 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            height: 55px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            transition: 0.2s;
+            font-weight: 600;
+        }
+
+        button:hover {
+            transform: scale(1.06);
+        }
+
+        .op {
+            background: #c6cffc;
+        }
+
+        .equal {
+            background: #6677ff;
+            color: white;
+        }
+
+        .clear,
+        .del {
+            background: #c6cffc;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 15px;
+            background: #f0f3ff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #333;
+            border-left: 5px solid #6677ff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Masai Calculator</h1>
+
+    <div class="calculator">
+
+        <div class="display"></div>
+
+        <div class="buttons">
+            <button class="op">(</button>
+            <button class="op">)</button>
+            <button class="clear">C</button>
+            <button class="del">⌫</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="op">÷</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="op">×</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="op">−</button>
+
+            <button>0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+            <button class="op">+</button>
+        </div>
+
+    </div>
+
+    <div class="note">
+        Note: This calculator is made only for the assignment. Buttons are not functional.
+    </div>
+
+</body>
+</html>
